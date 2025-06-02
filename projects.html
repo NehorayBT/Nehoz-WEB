@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nehoz</title>
+
+    <!-- STYLES -->
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- GLightbox STYLE -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+
+    <nav id="navbar-container"></nav>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+      <div class="project">
+        <a href="enzo24.html">
+          <img src="./assets/enzo24/logo.png" alt="Project Image" />
+        </a>
+        <div class="project-info">
+          <a href="enzo24.html">
+            <h3>Enzo Agada 2024</h3>
+          </a>
+          <p>
+            “Enzo Agada” is a grassroots arts festival held annually in Netanya,
+            Israel. It turns everyday spaces—homes, courtyards, and local
+            streets—into live venues for music, theater, and workshops, all led
+            by local artists and residents. The goal is to build community
+            through creativity and accessible culture. As part of the project, I
+            designed the event’s visual identity—including fliers, a printed
+            planner, and large-scale signage—ensuring a cohesive and inviting
+            aesthetic that reflected the festival’s inclusive and artistic
+            spirit.
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="enzo23.html">
+          <img src="./assets/enzo23/logo.png" alt="Project Image" />
+        </a>
+        <div class="project-info">
+          <a href="enzo23.html">
+            <h3>Enzo Agada 2023</h3>
+          </a>
+          <p>
+            “Enzo Agada” is a grassroots arts festival held annually in Netanya,
+            Israel. It turns everyday spaces—homes, courtyards, and local
+            streets—into live venues for music, theater, and workshops, all led
+            by local artists and residents. The goal is to build community
+            through creativity and accessible culture. As part of the project, I
+            designed the event’s visual identity—including fliers, a printed
+            planner, and large-scale signage—ensuring a cohesive and inviting
+            aesthetic that reflected the festival’s inclusive and artistic
+            spirit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="footer-container"></footer>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

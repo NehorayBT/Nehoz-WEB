@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nehoz</title>
+
+    <!-- STYLES -->
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- GLightbox STYLE -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+
+    <nav id="navbar-container"></nav>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- DESCRIPTION -->
+
+    <section class="description">
+      <h1>Enzo Agada 2024</h1>
+      <br />
+      <p>
+        “Enzo Agada” is a grassroots arts festival held annually in Netanya,
+        Israel. It turns everyday spaces—homes, courtyards, and local
+        streets—into live venues for music, theater, and workshops, all led by
+        local artists and residents. The goal is to build community through
+        creativity and accessible culture. As part of the project, I designed
+        the event’s visual identity—including fliers, a printed planner, and
+        large-scale signage—ensuring a cohesive and inviting aesthetic that
+        reflected the festival’s inclusive and artistic spirit.
+      </p>
+      <br />
+      <p>
+        The designs also included custom postcards for participating artists,
+        neighborhood-specific planners for regional coordination, and branded
+        merchandise such as tote bags and stickers—each element crafted to
+        strengthen the festival’s visual identity and foster a sense of
+        belonging among both creators and attendees.
+      </p>
+    </section>
+
+    <!-- GALLERY -->
+
+    <div id="container" class="fade-in">EMPTY</div>
+
+    <!-- FOOTER -->
+
+    <footer id="footer-container"></footer>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- SCRIPTS -->
+
+    <!-- Masonry library -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!-- imagesLoaded (optional but recommended for image layout) -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+    <!-- Load gallery when page loads -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        loadPage("gallery_enzo24.html");
+      });
+    </script>
+  </body>
+</html>

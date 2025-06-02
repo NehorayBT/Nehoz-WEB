@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nehoz</title>
+
+    <!-- STYLES -->
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- GLightbox STYLE -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+
+    <nav id="navbar-container"></nav>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- ABOUT -->
+
+    <section class="about">
+      <img
+        src="https://nehoz.com/wp-content/uploads/2022/08/PhotoRoom-20220806_214544-300x300.png"
+        alt=""
+      />
+      <div class="details">
+        <h1>About me</h1>
+        <br />
+        <p>
+          Hi! I’m Nehoray. my whole life I’ve been drawn to creation, and along
+          the years I’ve collected pieces that I love enough to share with the
+          world. My goal with this site is to be able to get them all arranged
+          in one place and exposed, and to invite any of you who need a
+          design/painting job to contact me. Together we can create great
+          things.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="footer-container"></footer>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

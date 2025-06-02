@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nehoz</title>
+
+    <!-- STYLES -->
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- GLightbox STYLE -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+
+    <nav id="navbar-container"></nav>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- Gallery buttons -->
+
+    <div class="buttons">
+      <button class="active" onclick="loadPage('./gallery_designs.html', this)">
+        Designs
+      </button>
+      <button onclick="loadPage('./gallery_color.html', this)">Color</button>
+      <button onclick="loadPage('./gallery_pen.html', this)">Pen</button>
+    </div>
+
+    <!-- GALLERIES -->
+
+    <div id="container" class="fade-in">EMPTY</div>
+
+    <!-- FOOTER -->
+
+    <footer id="footer-container"></footer>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+    </script>
+
+    <!-- SCRIPTS -->
+
+    <!-- Masonry library -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!-- imagesLoaded (optional but recommended for image layout) -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+    <!-- Load the designs gallery at start -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        loadPage("gallery_designs.html");
+      });
+    </script>
+  </body>
+</html>
