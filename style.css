@@ -21,6 +21,21 @@ p {
   color: rgb(85, 85, 85);
 }
 
+h1,
+h3 {
+  color: rgb(63, 79, 101);
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  -webkit-touch-callout: none;
+  cursor: pointer;
+}
+
 /* TRANSITION */
 
 a,
@@ -45,7 +60,7 @@ nav,
 nav {
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 300px;
   gap: 10vw;
 }
 
@@ -70,8 +85,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
-  width: 310px;
-  height: 122px;
+  width: 500px;
 }
 
 .logo:hover {
@@ -80,7 +94,7 @@ a:hover {
 
 .logo img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* HAMBURGER MENU */
@@ -89,13 +103,23 @@ a:hover {
   display: none;
 }
 
+.hamburger-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .hamburger-menu {
   position: relative;
-  display: inline-block;
-  z-index: 100;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  /* z-index: 100; */
 }
 
 .hamburger-icon {
+  margin-right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,6 +137,10 @@ a:hover {
 
 .menu-links {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 30rem;
   top: 100%;
   right: 0;
   background-color: rgba(63, 79, 101);
@@ -124,9 +152,9 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 0 2rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 5rem;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -137,7 +165,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 700px;
   border: 2px solid white;
 }
 
@@ -206,12 +234,6 @@ a:hover {
 
 .grid-item:hover img {
   transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .grid-item {
-    width: 50%;
-  }
 }
 
 /* TRANSITIONS FOR FADING GALLERY GRIDS IN/OUT */
@@ -436,6 +458,7 @@ a:hover {
   padding: 20px 40px;
   height: 7rem;
 }
+
 .footer-logo img {
   height: 80px;
 }
