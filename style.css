@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -41,6 +42,7 @@ button {
 a,
 .btn {
   transition: all 300ms ease;
+  -webkit-tap-highlight-color: transparent; /* for mobile Safari */
 }
 
 /* GENERAL NAV */
