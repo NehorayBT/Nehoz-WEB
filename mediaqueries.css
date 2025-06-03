@@ -8,7 +8,7 @@
 
   .buttons button {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
     height: 6rem;
   }
 
@@ -18,7 +18,6 @@
 
   .about {
     flex-direction: column;
-    text-align: center;
     padding: 20px;
   }
 
@@ -28,8 +27,17 @@
   }
 
   .about .details {
-    text-align: left;
     padding: 0 10px;
+  }
+
+  .details-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about h1 {
+    font-weight: 600;
   }
 
   .contact-links {
@@ -57,22 +65,30 @@
     height: 70px;
   }
 
+  .footer-icon {
+    padding: 20px 20px;
+  }
+
+  .logo-links {
+    gap: 0;
+  }
+
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .description h1 {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 4rem;
+    font-weight: 600;
   }
 
   .description p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .description {
@@ -80,12 +96,14 @@
   }
 
   .project-info h3 {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 4rem;
+    font-weight: 600;
+    justify-content: center;
+    display: flex;
   }
 
   .project-info p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .project {
@@ -112,6 +130,8 @@
 
   .logo {
     width: 40rem;
+    top: -50px;
+    position: relative;
   }
 
   nav {
@@ -120,5 +140,9 @@
 
   .contact-section {
     max-width: 100%;
+  }
+
+  .contact-link {
+    font-size: 2rem;
   }
 }
