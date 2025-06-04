@@ -50,7 +50,9 @@ function loadPage(url, btn = null) {
         container.classList.remove("fade-in"); // reset class
         void container.offsetWidth; // trigger reflow
         container.innerHTML = html;
-        container.classList.add("fade-in");
+        requestAnimationFrame(() => {
+          container.classList.add("fade-in");
+        });
 
         // Re-initialize any scripts or plugins
         setupMasonry();

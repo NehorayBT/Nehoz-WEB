@@ -148,9 +148,11 @@ a:hover {
   right: 0;
   background-color: rgba(63, 79, 101);
   width: fit-content;
-  max-height: 0;
+  /* max-height: 0; */
+  opacity: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid white;
 }
 
 .menu-links a {
@@ -160,7 +162,7 @@ a:hover {
   font-size: 5rem;
   color: white;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu-links li {
@@ -168,8 +170,8 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 700px;
-  border: 2px solid white;
+  /* max-height: 700px; */
+  opacity: 1;
 }
 
 .hamburger-icon.open span:first-child {
@@ -514,6 +516,7 @@ a:hover {
   width: 30px;
   height: auto;
   stroke-width: 2;
+  transform: translateX(40px);
 }
 
 .logo-links a {
@@ -524,12 +527,6 @@ a:hover {
 .logo-links a:hover,
 .logo-links a:focus {
   color: #ffb4f6; /* pink on hover */
-}
-
-.logo-links .footer-icon {
-  width: 30px;
-  height: auto;
-  stroke-width: 2;
 }
 
 /* PROJECT DESCRIPTION */

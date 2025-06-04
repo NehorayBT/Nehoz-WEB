@@ -145,4 +145,8 @@
   .contact-link {
     font-size: 2rem;
   }
+
+  .logo-links .footer-icon {
+    width: 50px;
+  }
 }
