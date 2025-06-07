@@ -148,7 +148,7 @@ a:hover {
   right: 0;
   background-color: rgba(63, 79, 101);
   width: fit-content;
-  /* max-height: 0; */
+  max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
@@ -170,7 +170,7 @@ a:hover {
 }
 
 .menu-links.open {
-  /* max-height: 700px; */
+  max-height: 10000px;
   opacity: 1;
 }
 
